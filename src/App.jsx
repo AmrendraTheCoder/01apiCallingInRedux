@@ -13,7 +13,7 @@ function App() {
 
   return (
     <div className="app-container">
-      <button className="fetch-button" onClick={e => dispatch(fetchTodo())}>Fetch Todo</button>
+      <button className="fetch-button" onClick={e => dispatch(fetchTodo())}>Generate Todo</button>
       <ul className="todo-list">
         {state.todo.data && state.todo.data.map((data) => (
           <li key={data.id} className="todo-item">{data.title}</li>
